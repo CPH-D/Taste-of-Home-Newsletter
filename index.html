@@ -10,11 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"/> -->
 
-    <style>
+    <style>        
+        @media only screen and (min-width: 600px){
+            .break{
+                display: none;
+            }
+        }
         @media only screen and (max-width: 600px){
             .email-container{
                 width: 100%;
-            }            
+            }
+            .signup-thanks{
+                text-align: center;
+            }
         }
     </style>
 
@@ -55,7 +63,7 @@
                                                 <td>
                                                     <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 20px;">
                                                         <tr>
-                                                            <td style="font-family: sans-serif, 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande'; font-weight: 700; font-size: 28px; letter-spacing: -.05em; color: #343232;  padding: 25px 0px 7px;">
+                                                            <td class="signup-thanks" style="font-family: sans-serif, 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande'; font-weight: 700; font-size: 28px; letter-spacing: -.05em; color: #343232;  padding: 25px 0px 7px;">
                                                                     Thank you for signing up for our newsletter!
                                                             </td>
                                                         </tr>
@@ -82,27 +90,27 @@
                                 <!-- start of recipe images -->
                                 <tr>
                                     <td>
-                                        <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background-color: white;">
+                                        <table class="container" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background-color: white;">
                                             <tr>
                                                 <td>
-                                                    <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+                                                    <table class="recipes-container" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
                                                         <tr>
                                                             <td style="padding: 0 10px;">
                                                                 <img src="https://raw.githubusercontent.com/CPH-D/Taste-of-Home-Newsletter/main/img/production/comfort_food_image.jpg" width="100%" style="cursor: pointer;">
-                                                                <p style="font-family: sans-serif, 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande'; font-weight: 600; color: #15c; text-align: center; border-bottom: 1px dotted #999; padding: 0 0 15px; cursor: pointer;">
+                                                                <p class="food-types" style="font-family: sans-serif, 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande'; font-weight: 600; color: #15c; text-align: center; border-bottom: 1px dotted #999; padding: 0 0 15px; cursor: pointer;">
                                                                     Comfort Food Recipes
                                                                 </p>
                                                             </td>
                                                             <td style="padding: 0 10px;">
                                                                 <img src="https://raw.githubusercontent.com/CPH-D/Taste-of-Home-Newsletter/main/img/production/dinner_image.jpg" width="100%" style="cursor: pointer;">
                                                                 <p style="font-family: sans-serif, 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande'; font-weight: 600; color: #15c; text-align: center; border-bottom: 1px dotted #999; padding: 0 0 15px; cursor: pointer;">
-                                                                    Dinner Recipes
+                                                                    Dinner <br class="break"> Recipes
                                                                 </p>
                                                             </td>
                                                             <td style="padding: 0 10px;">
                                                                 <img src="https://raw.githubusercontent.com/CPH-D/Taste-of-Home-Newsletter/main/img/production/dessert_image.jpg" width="100%" style="cursor: pointer;">
                                                                 <p style="font-family: sans-serif, 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande'; font-weight: 600; color: #15c; text-align: center; border-bottom: 1px dotted #999; padding: 0 0 15px; cursor: pointer;">
-                                                                    Dessert Recipes
+                                                                    Dessert <br class="break"> Recipes
                                                                 </p>
                                                             </td>
                                                         </tr>
